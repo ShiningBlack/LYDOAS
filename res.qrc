@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/main">
+        <file>icon.ico</file>
+        <file>main.ico</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>style.qss</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>Icon/clear.png</file>
+        <file>Icon/connect.png</file>
+        <file>Icon/dash.png</file>
+        <file>Icon/debug.png</file>
+        <file>Icon/exportToPixmap.png</file>
+        <file>Icon/import_back.png</file>
+        <file>Icon/import_dark.png</file>
+        <file>Icon/module.png</file>
+        <file>Icon/resetAxis.png</file>
+        <file>Icon/resolution.png</file>
+        <file>Icon/save.png</file>
+        <file>Icon/setting.png</file>
+        <file>Icon/wave.png</file>
+        <file>icon.ico</file>
+        <file>Icon/save2.png</file>
+    </qresource>
+</RCC>

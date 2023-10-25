@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModuleDebugPage</class>
+ <widget class="QWidget" name="ModuleDebugPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>624</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>光路调试</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QPushButton" name="pushButton_Refresh">
+              <property name="text">
+               <string>刷新</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ZeroCaliState">
+              <property name="text">
+               <string>零点校准</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_ZeroCaliState">
+              <property name="text">
+               <string>零点校准状态</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_Interval">
+              <property name="text">
+               <string>采集间隔：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_Interval"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadInterval">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetInterval">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_LightingTimes">
+              <property name="text">
+               <string>亮灯次数：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_LigthingTimes"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadLigthingTimes">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetLigthingTimes">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_AddTimes">
+              <property name="text">
+               <string>叠加次数：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_AddTimes"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadAddTimes">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetAddTimes">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_XenonEnergy">
+              <property name="text">
+               <string>氙灯能量：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_XenonEnergy"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadXenonEnergy">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetXenonEnergy">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>实时信息</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,6">
+              <item>
+               <widget class="QLabel" name="label_ModuleNumb">
+                <property name="text">
+                 <string>模块序列号:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ModuleNumb"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,6">
+              <item>
+               <widget class="QLabel" name="label_SoftwareVersion">
+                <property name="text">
+                 <string>软件版本号:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_SoftwareVersion"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,3,3">
+              <item>
+               <widget class="QLabel" name="label_ModuleStateLabel">
+                <property name="text">
+                 <string>模块状态:   </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ModuleState"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_ModuleState">
+                <property name="text">
+                 <string>   模块状态</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="2,3,3">
+              <item>
+               <widget class="QLabel" name="label_ChamberPressure">
+                <property name="text">
+                 <string>气室压力:   </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ChamberPressure"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_Kpa">
+                <property name="text">
+                 <string>   KPa</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="2,3,3">
+              <item>
+               <widget class="QLabel" name="label_ChamberTemperature">
+                <property name="text">
+                 <string>气室温度:   </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ChamberTemperature"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_Cels1">
+                <property name="text">
+                 <string>   ℃</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="2,3,3">
+              <item>
+               <widget class="QLabel" name="label_SpectrometerTempreature">
+                <property name="text">
+                 <string>光谱仪温度:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_SpectrometerTempreature"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_Cels2">
+                <property name="text">
+                 <string>   ℃</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="2,3,3">
+              <item>
+               <widget class="QLabel" name="label_WaveLengthShift">
+                <property name="text">
+                 <string>波长漂移量:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_WaveLengthShift"/>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_GasType">
+                <property name="text">
+                 <string>气体</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_mg_m3">
+                <property name="text">
+                 <string>        mg/m3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_pm">
+                <property name="text">
+                 <string>          ppm</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_17" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>NO2:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_mg_NO2"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ppm_NO2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="text">
+                 <string>SO2:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_mg_SO2"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ppm_SO2"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>NO:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_mg_NO"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ppm_NO"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_17">
+                <property name="text">
+                 <string>NH3:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_mg_NH3"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ppm_NH3"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19" stretch="1,2,2">
+              <item>
+               <widget class="QLabel" name="label_16">
+                <property name="text">
+                 <string>H2S:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_mg_H2S"/>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_ppm_H2S"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="vericalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

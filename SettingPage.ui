@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingPage</class>
+ <widget class="QWidget" name="SettingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tabSerialPort">
+        <attribute name="title">
+         <string>串口</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="title">
+            <string>串口</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_25" stretch="1,2">
+                <item>
+                 <widget class="QLabel" name="label_Baud">
+                  <property name="text">
+                   <string>波特率：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_Baud"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_26" stretch="1,2">
+                <item>
+                 <widget class="QLabel" name="label_Data">
+                  <property name="text">
+                   <string>数据位：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_Data"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="1,2">
+                <item>
+                 <widget class="QLabel" name="label_Parity">
+                  <property name="text">
+                   <string>校验位：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_Parity"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="1,2">
+                <item>
+                 <widget class="QLabel" name="label_Stop">
+                  <property name="text">
+                   <string>停止位：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="comboBox_Stop"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>存储</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_9">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>默认存储路径：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_StoragePath"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnSelectStoragePath">
+             <property name="text">
+              <string>选择</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>图表</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>图表</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <widget class="QGroupBox" name="groupBox">
+                  <property name="title">
+                   <string>X轴</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_2">
+                         <property name="text">
+                          <string>最小值</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_XMinValue"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_3">
+                         <property name="text">
+                          <string>最大值</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_XMaxValue"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_6">
+                         <property name="text">
+                          <string>最小刻度</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_XScale"/>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_2">
+                  <property name="title">
+                   <string>Y轴</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_5">
+                   <item row="0" column="0">
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_4">
+                         <property name="text">
+                          <string>最小值</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_YMinValue"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_5">
+                         <property name="text">
+                          <string>最大值</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_YMaxValue"/>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="2,5">
+                       <item>
+                        <widget class="QLabel" name="label_7">
+                         <property name="text">
+                          <string>最小刻度</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="lineEdit_YScale"/>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabManual">
+        <attribute name="title">
+         <string>说明</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_8">
+         <item row="0" column="0">
+          <widget class="QTextBrowser" name="textBrowser">
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; color:#005500;&quot;&gt;版本：V2.2.0-0701&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;日期：2023-10-13&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Qt Creator：11.0.2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Qt  Kit：Qt 5.15.2 MinGW 64 bit&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;OS：Windows10 企业版&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 2.2.0 Time: 2023/10/13&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.添加调试数据表格显示Dock&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.添加调试数据分析图表&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.配置信息布局界面全部用代码重构&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.配置信息界面改为Dock&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.添加参考曲线图例，可用于显示和隐藏导入的参考曲线&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6.添加XTop轴和YRight轴&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7.添加坐标轴显示和关闭功能&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8.修复漂移量计算必须打开漂移量计算窗口才能导入参考曲线的问题&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;9.添加显示和隐藏网格线功能&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version:2.1.4 Time: 2023/9/18&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.修复光谱仪上位机只能导入一条参考光谱的bug&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.优化上位机打开导入和导出文件对话框速度&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.删除分辨率显示窗口&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.合并采集功能到QComboBox中&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version:2.1.3 Time: 2023/9/16&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.修复导出光谱数据概率导出不全的情况&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.状态栏添加气室压力和气室温度&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.优化部分代码，提高性能&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:11pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 2.2.0 Time: 2023/10/13&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.添加调试数据表格展示&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.添加调试数据分析图表&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.添加参考光谱图例、可用于显示隐藏导入的参考曲线&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.重构配置信息页面，所有布局均适用代码实现&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5.修改调试信息原始数据显示为Dock&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6.调整状态栏标签样式&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7.添加隐藏及显示网格线功能&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8.添加XTop轴和YRight轴&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;9.添加坐标轴的关闭和启用功能&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Version: 2.1.2 Time: 2023/9/15&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.修复接收到文件的调试数据导入到Xlsx文件后只有一行的问题&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.添加默认存储路径功能&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Veersion: 2.1.1 Time: 2023/9/15&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.修复调试数据导出到Xlsx文件后有空行的问题&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Veersion: 2.1.0 Time: 2023/9/14&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1.模块调试页重置气体排序：NO2、SO2、NO、NH3、H2S&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2.合并主页面【设置最大折线数】和【连续保存】为配置组&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3.修改配置栏比例为1:1:1:1:4&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4.工具栏添加导出光谱数据和导出调试数据动作&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_Apply">
+         <property name="text">
+          <string>应用</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_Cancel">
+         <property name="text">
+          <string>取消</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

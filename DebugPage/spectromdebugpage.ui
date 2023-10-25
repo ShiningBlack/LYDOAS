@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpectromDebugPage</class>
+ <widget class="QWidget" name="SpectromDebugPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>433</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>光路调试</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_Interval" stretch="4,2,2,2">
+            <item>
+             <widget class="QLabel" name="label_Interval">
+              <property name="text">
+               <string>采集间隔</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_Interval"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadInterval">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetInterval">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_ExposureTime" stretch="4,2,2,2">
+            <item>
+             <widget class="QLabel" name="label_ExposureTime">
+              <property name="text">
+               <string>曝光时间(us)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_ExposureTime"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadExposureTime">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetExposureTime">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_AddTimes" stretch="4,2,2,2">
+            <item>
+             <widget class="QLabel" name="label_AddTimes">
+              <property name="text">
+               <string>叠加次数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_AddTimes"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadAddTimes">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetAddTimes">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_DarkCurrent" stretch="4,2,2,2">
+            <item>
+             <widget class="QLabel" name="label_DarkCurrentValue">
+              <property name="text">
+               <string>暗电流值</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_DarkCurrentValue"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadDarkCurrentValue">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetDarkCurrentValue">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_TriggerMode" stretch="2,2,2,2">
+            <item>
+             <widget class="QLabel" name="label_TriggerMode">
+              <property name="text">
+               <string>触发模式 </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_TriggerMode"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_ReadTriggerMode">
+              <property name="text">
+               <string>读取</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_SetTriggerMode">
+              <property name="text">
+               <string>设置</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="pushButton_Reset">
+            <property name="text">
+             <string>恢复出厂设置</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>设置光谱仪序列号</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="8,2,2">
+          <item>
+           <widget class="QLineEdit" name="lineEdit_SerialNumber"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_ReadSerialNumber">
+            <property name="text">
+             <string>读取</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_SetSerialNumber">
+            <property name="text">
+             <string>设置</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>实时信息</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,5">
+            <item>
+             <widget class="QLabel" name="label_SpectromNumber">
+              <property name="text">
+               <string>光谱仪序列号：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_SpectromNumber"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,5">
+            <item>
+             <widget class="QLabel" name="label_SoftwareVersion">
+              <property name="text">
+               <string>软件版本号   ：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_SoftwareVersion"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="2,3,2">
+            <item>
+             <widget class="QLabel" name="label_SpectromTemp">
+              <property name="text">
+               <string>光谱仪温度   ：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_SpectromTemp"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>℃</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
